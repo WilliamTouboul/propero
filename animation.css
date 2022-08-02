@@ -1,0 +1,29 @@
+@keyframes reveal {
+    0% {
+        top: 70;
+    }
+
+    100% {
+        top: -14px;
+    }
+}
+
+@keyframes reveal_2 {
+    0% {
+        top: 75px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes reveal_nav {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 100px;
+    }
+}

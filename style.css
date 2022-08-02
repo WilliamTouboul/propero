@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 6%;
+  padding-right: 6%;
+  height: 100px;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+}
+nav .hider {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  -webkit-animation: reveal_nav 1.2s ease-in-out forwards;
+          animation: reveal_nav 1.2s ease-in-out forwards;
+}
+nav .left {
+  width: 260px;
+  font-weight: 600;
+  font-size: 24px;
+}
+nav .mid {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 500;
+}
+nav .mid a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav .right {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .right a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav .right a:last-child {
+  color: white;
+  background-color: black;
+  padding: 12px 38px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+main {
+  height: 95vh;
+  width: 100vw;
+  background-image: url("/r-architecture-wDDfbanbhl8-unsplash.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 400;
+  position: relative;
+}
+main .filter {
+  background-color: rgba(6, 6, 10, 0.308);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+main .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  margin-top: -80px;
+}
+main .hero h1 {
+  font-size: 64px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  position: relative;
+  width: 100%;
+  height: 75px;
+  overflow: hidden;
+}
+main .hero h1 .h1_inner {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  -webkit-animation: reveal 1.2s ease-in-out forwards;
+          animation: reveal 1.2s ease-in-out forwards;
+}
+main .hero h2 {
+  font-weight: 200;
+  margin-bottom: 60px;
+  position: relative;
+  width: 75%;
+  height: 50px;
+  overflow: hidden;
+}
+main .hero h2 .h2_inner {
+  position: absolute;
+  top: 78px;
+  width: 100%;
+  -webkit-animation: reveal_2 1.2s ease-in-out forwards;
+          animation: reveal_2 1.2s ease-in-out forwards;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+main .hero .search {
+  background-color: white;
+  border-radius: 120px;
+  width: 54vw;
+  height: 110px;
+  display: grid;
+  grid-template-columns: 15% 15% 50% 20%;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+main .hero .search > * {
+  border: none;
+}
+main .hero .search .for_sell {
+  grid-area: 1/1/2/2;
+  border-radius: 125px 0 0 125px;
+  padding-left: 40px;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Poppins";
+  width: 150px;
+}
+main .hero .search .property {
+  grid-area: 1/2/2/3;
+  padding-left: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+main .hero .search .search_input {
+  grid-area: 1/3/2/4;
+  padding-left: 40px;
+  font-size: 18px;
+  font-family: "Poppins";
+}
+main .hero .search .go_search {
+  grid-area: 1/4/2/5;
+  background-color: black;
+  color: white;
+  border-radius: 125px;
+  font-size: 18px;
+  font-family: "Poppins";
+  margin-right: 12px;
+  height: 80%;
+  margin-top: 4%;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+main .hero .search .go_search span {
+  background-image: url("/loupe.png");
+  height: 18px;
+  width: 18px;
+  background-size: cover;
+  margin-right: 12px;
+}/*# sourceMappingURL=style.css.map */
